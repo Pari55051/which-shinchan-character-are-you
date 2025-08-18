@@ -1,5 +1,5 @@
 
-## COlor Palette
+## Color Palette
 Bg: mustard yellow w/ white grid lines (rough handrawn style)
 main heading: shinchan main logo
 sub heading: "which char...?" --> blue
