@@ -4,3 +4,118 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  background: url('./assets/bg.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+#title {
+  height: 32%;
+  width: 100%;
+  /* background: beige; */
+  text-align: center;
+}
+
+#title .logo img {
+  width: 20%
+}
+
+#title .title-text h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+#title .title-text p {
+  font-size: 1.3rem;
+}
+
+
+
+#quiz {
+  height: 68%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* gap: 1rem; */
+}
+
+#quiz-box {
+  height: 70%;
+  width: 50%;
+  background: #fffad8;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#progress-bar {
+  background: #ddd;
+  height: 10px;
+  width: 100%;
+  border-radius: 6px;
+  /* margin-top: 10px; */
+}
+
+#progress {
+  background: #3a3af9;
+  height: 100%;
+  width: 0%;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer .footer-top {
+  width: 100%;
+  background: #5757f7;
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-top .logo {
+  width: 15%;
+  /* background: #000; */
+}
+
+footer .footer-top .text {
+  width: 45%;
+  /* background: red; */
+  font-size: small;
+  color: #fff;
+}
+
+footer .copyright {
+  background-color: #3a3af9;
+  text-align: center;
+  font-size: small;
+  color: #fffad8;
+  letter-spacing: 2px;
+}
+
+footer .copyright a {
+  text-decoration: none;
+  color: #fffad8;
+}
