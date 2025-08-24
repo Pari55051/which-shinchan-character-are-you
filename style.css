@@ -16,6 +16,29 @@ body {
   font-family: Geneva, Verdana, sans-serif;
 }
 
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0.6rem;
+  outline: none;
+  border-radius: 25px;
+  background-color: #3a3af9;
+  color: #fff;
+  border: 2px solid #3a3af9;
+  width: 7rem;
+  transition: background 250ms ease;
+}
+
+button:hover {
+  background-color: #5757f7;
+  border: 2px solid #5757f7;
+}
+
+
+
 #title {
   height: 32%;
   width: 100%;
@@ -48,7 +71,8 @@ body {
   /* gap: 1rem; */
 }
 
-#quiz-box {
+#quiz-box,
+#result-box {
   height: 70%;
   width: 50%;
   background: #fffad8;
@@ -72,17 +96,54 @@ body {
   height: 100%;
   width: 0%;
   border-radius: 6px;
+  transition: width 1s ease;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+  /* background: #000; */
 }
 
+#result-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+#result-box h2 {
+  font-size: 2rem;
+}
+
+#result-box .char-img {
+  /* max-height: fit-content; */
+  height: 55%;
+}
+
+#result-box .char-img img {
+  height: 100%;
+  /* width: ; */
+}
+
+#char-name {
+  font-size: 1.4rem;
+  color: blue;
+  margin-bottom: 0.5rem;
+}
+
+#result-box .restart-btn {
+  text-align: right;
+  position: relative;
+  bottom: -0.5rem;
+  right: 1rem;
+}
 
 
 footer {
   width: 100%;
   height: fit-content;
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
 }
