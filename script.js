@@ -3,19 +3,19 @@ const questions = [
      {
     text: "What's your favorite color?",
     options: [
-      { text: "Red", img: "https://via.placeholder.com/50/ff0000" },
-      { text: "Blue", img: "https://via.placeholder.com/50/0000ff" },
-      { text: "Green", img: "https://via.placeholder.com/50/00ff00" },
-      { text: "Yellow", img: "https://via.placeholder.com/50/ffff00" }
+      { text: "Red", img: "./assets/quiz_assets/q1/opt1.jpeg" },
+      { text: "Blue", img: "./assets/quiz_assets/q1/opt2.png" },
+      { text: "Green", img: "./assets/quiz_assets/q1/opt3.png" },
+      { text: "Yellow", img: "./assets/quiz_assets/q1/opt4.jpeg" }
     ]
   },
   {
     text: "Pick a weekend activity:",
     options: [
-      { text: "Watching cartoons", img: "https://via.placeholder.com/50/f0c" },
-      { text: "Playing sports", img: "https://via.placeholder.com/50/0cf" },
-      { text: "Reading", img: "https://via.placeholder.com/50/ccc" },
-      { text: "Sleeping", img: "https://via.placeholder.com/50/333" }
+      { text: "Watching cartoons", img: "./assets/quiz_assets/q2/opt1.jpg" },
+      { text: "Playing sports", img: "./assets/quiz_assets/q2/opt2.avif" },
+      { text: "Reading", img: "./assets/quiz_assets/q2/opt3.jpg" },
+      { text: "Sleeping", img: "./assets/quiz_assets/q2/opt4.jpg" }
     ]
   },
 ]
