@@ -1,3 +1,15 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Schoolbell&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Schoolbell&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Schoolbell&display=swap');
+
+:root {
+  --primary-blue: rgb(39,94,170);
+  --primary-blue-dark: rgb(18,51,103);
+  --white: rgb(240,240,240);
+  --primary-red: rgb(196,60,57);
+  --bg-yellow: rgb(255, 250, 216);
+  --bg-white: rgb(238, 242, 246);
+}
 
 * {
   margin: 0;
@@ -13,7 +25,11 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  font-family: Geneva, Verdana, sans-serif;
+  /* font-family: Geneva, Verdana, sans-serif; */
+  /* font-family: "Karla", sans-serif; */
+  /* font-family: "Comfortaa", sans-serif; */
+  font-family: "Fredoka", sans-serif;
+  color: var(--primary-blue-dark);
 }
 
 
@@ -25,16 +41,16 @@ button {
   padding: 0.6rem;
   outline: none;
   border-radius: 25px;
-  background-color: #3a3af9;
-  color: #fff;
-  border: 2px solid #3a3af9;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: 2px solid var(--primary-blue);
   width: 7rem;
   transition: background 250ms ease;
 }
 
 button:hover {
-  background-color: #5757f7;
-  border: 2px solid #5757f7;
+  background-color: var(--primary-blue-dark);
+  border: 2px solid var(--primary-blue-dark);
 }
 
 
@@ -51,12 +67,15 @@ button:hover {
 }
 
 #title .title-text h1 {
-  margin-top: 2rem;
-  font-size: 3rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  font-family: "Schoolbell", cursive;
+  letter-spacing: 2px;
 }
 
 #title .title-text p {
   font-size: 1.3rem;
+  /* font-family: "Schoolbell", cursive; */
 }
 
 
@@ -73,18 +92,24 @@ button:hover {
 
 #quiz-box,
 #result-box {
-  height: 70%;
+  height: 75%;
   width: 50%;
-  background: #fffad8;
+  background: var(--bg-yellow);
   margin-top: 3rem;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  border-radius: 10px;
+}
+
+#quiz-box h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 
 #progress-bar {
-  background: #ddd;
+  background: var(--white);
   height: 10px;
   width: 100%;
   border-radius: 6px;
@@ -92,7 +117,7 @@ button:hover {
 }
 
 #progress {
-  background: #3a3af9;
+  background: var(--primary-blue);
   height: 100%;
   width: 0%;
   border-radius: 6px;
@@ -105,7 +130,7 @@ button:hover {
 }
 
 #options {
-  height: 78%;
+  height: 75%;
   width: 60%;
   margin: 0 auto;
   /* background-color: aquamarine; */
@@ -127,7 +152,7 @@ button:hover {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: aliceblue;
+  background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -147,6 +172,7 @@ button:hover {
   /* text-align: center; */
   /* align-items: center; */
   margin-top: 0.45rem;
+  font-size: 1.15rem;
 }
 
 #options .option-card:hover {
@@ -155,8 +181,8 @@ button:hover {
 }
 
 #options .option-card.selected {
-  border: 3px solid #2222d2;
-  background-color: #bedcf9;
+  border: 3px solid var(--primary-blue);
+  /* background-color: #bedcf9; */
 }
 
 
@@ -169,6 +195,7 @@ button:hover {
 
 #result-box h2 {
   font-size: 2rem;
+  font-weight: 500;
 }
 
 #result-box .char-img {
@@ -182,9 +209,10 @@ button:hover {
 }
 
 #char-name {
-  font-size: 1.4rem;
-  color: blue;
+  font-size: 2.4rem;
+  color: var(--primary-red);
   margin-bottom: 0.5rem;
+  font-family: "Schoolbell", cursive;
 }
 
 #result-box .restart-btn {
@@ -207,29 +235,42 @@ footer {
 
 footer .footer-top {
   width: 100%;
-  background: #5757f7;
+  background: var(--primary-blue-dark);
   display: flex;
   justify-content: center;
 }
 
 footer .footer-top .logo {
-  width: 15%;
+  width: 45%;
   /* background: #000; */
+  /* display: flex;
+  justify-content: right; */
+  /* padding: 0.1rem; */
+  /* margin: auto 0; */
+}
+
+footer .footer-top .logo img {
+  width: 20%;
+  position: relative;
+  right: -78%;
+  top: 0.25rem;
 }
 
 footer .footer-top .text {
-  width: 45%;
+  width: 55%;
   /* background: red; */
   font-size: small;
   color: #fff;
+  padding: 0.5rem;
 }
 
 footer .copyright {
-  background-color: #3a3af9;
+  background-color: var(--primary-blue);
   text-align: center;
   font-size: small;
   color: #fffad8;
   letter-spacing: 2px;
+  padding: 0.25rem;
 }
 
 footer .copyright a {
